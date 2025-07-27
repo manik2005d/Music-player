@@ -14,7 +14,7 @@ A beautiful and interactive **Spotify-inspired music player** built using **HTML
 
 ## 📸 Preview
 
-![Spotify Clone Screenshot](<img width="1919" height="866" alt="image" src="https://github.com/user-attachments/assets/dcfee878-814e-42b0-9217-cf137fdc89cb" />)
+![Spotify Clone Screenshot](images/screenshot.png)
 
 
 ## 🛠️ Tech Stack
