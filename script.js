@@ -15,7 +15,7 @@ const getSongs = async ()=>{
     }
     return songs;
 }
- 
+
 const playMusic = (tracks)=>{
     document.querySelector(".volume").style.display = "flex";
     document.querySelector(".range").querySelector("input").style.display = "flex";
@@ -36,14 +36,14 @@ const main = async ()=>{
     for (let song of songNames){
         songul.innerHTML = songul.innerHTML+ 
                             `<li>
-                                <img class="invert" src="svgs/music.svg">
+                                <img class="invert" src="/svgs/music.svg">
                                 <div class="info">
                                 <div>${song.slice(0,-4)}</div>
                                 <div>Artist</div>
                                 </div>
                                 <div class="playnow">
                                 <span>Play Now</span>
-                                <img class="invert" src="svgs/play.svg">
+                                <img class="invert" src="/svgs/play.svg">
                                 </div>
                             </li>`;
     }
@@ -60,10 +60,10 @@ const main = async ()=>{
     play.addEventListener("click",()=>{
         if (currentSong.paused && currentSong.src!=""){
             currentSong.play();
-            play.src="svgs/pause.svg";
+            play.src="/svgs/pause.svg";
         }else if(currentSong!=""){
             currentSong.pause();
-            play.src="svgs/play.svg";
+            play.src="/svgs/play.svg";
         }
     })
 
